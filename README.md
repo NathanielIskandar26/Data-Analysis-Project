@@ -10,7 +10,7 @@ This project demonstrates my ability to clean and analyze data using Python and 
 
 ---
 
-## Tools and Technologies Used
-- **Python**: For data cleaning and initial exploration (pandas, numpy).
-- **SQL**: For querying the cleaned data and performing analysis.
-- **Jupyter Notebook**: To document and showcase the entire workflow.
+## Tools and Environment
+- **Python**: For data cleaning and initial exploration (pandas & numpy).
+- **MySQL**: For querying the cleaned data and performing analysis.
+- **Jupyter Notebook**: Employed as the main environment for documenting and executing the data cleaning and analysis workflow.
