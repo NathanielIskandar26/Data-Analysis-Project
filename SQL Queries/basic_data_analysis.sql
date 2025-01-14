@@ -4,11 +4,11 @@ SELECT * FROM customer;
 -- Query 2: Displays all data for customers that live in New York
 SELECT * FROM customer WHERE State = 'New York';
 
--- Query 3: Displays how many paying customers that don't to be contacted
+-- Query 3: Displays how many paying customers that don't want to be contacted
 SELECT COUNT(*) FROM customer 
 WHERE Paying_Customer = 'Yes' AND Do_Not_Contact = 'No';
 
--- Query 4: Displays first name, last name, and phone number for every paying customers that don't to be contacted
+-- Query 4: Displays first name, last name, and phone number for every paying customers that don't want to be contacted
 SELECT First_Name, Last_Name, Phone_Number FROM customer 
 WHERE Paying_Customer = 'Yes' AND Do_Not_Contact = 'No';
 
@@ -35,7 +35,7 @@ VALUES ('Richard', 'Timothy', '123-567-4234', 'Yes', 'No', '261 Monterey Lane', 
 -- Query 8: Updates table by adding a new column for email
 ALTER TABLE customer ADD Email VARCHAR(100);
 
--- Query 9: Adds data into every empty email column by concatenating customer's first and last name
+-- Query 9: Adds email into every empty email row by concatenating customer's first and last name
 UPDATE customer
 SET Email = CONCAT(LOWER(First_Name), '_', LOWER(Last_Name), '@example.com')
 WHERE Email IS NULL;
